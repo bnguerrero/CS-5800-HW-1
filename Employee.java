@@ -1,8 +1,7 @@
-//package CS-5800-HW-1;
 
 public class Employee 
 {
-    String firstName, lastName, sSNumber;
+    private String firstName, lastName, sSNumber;
     /**
      * Constructor
      * @param firstName first name of employee
