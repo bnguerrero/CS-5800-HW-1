@@ -6,21 +6,36 @@ public class EmployeeChart
     public static void main(String[] args) 
     {
         Scanner scan = new Scanner(System.in);
-        String eFirstName, eLastName, eSSNumber, eStatus;
+        String eFirstName, eLastName, eSSNumber, eEarnings;
+        String choice;
+        char command;
 
-        // read employee input
-        System.out.println("Please input your first name");
-        eFirstName = scan.nextLine();
-        System.out.println("Please input your last name");
-        eLastName = scan.nextLine();
-        System.out.println("Please input your Social Security Number");
-        eSSNumber = scan.nextLine();
+        printMenu();
+
+        do
+        {
+            System.out.println("Please select the type of employee.");
+            choice = scan.next().toLowerCase();
+            command = choice.charAt(0);
+            // read employee input
+            System.out.println("Please input the employees first name");
+            eFirstName = scan.nextLine();
+            System.out.println("Please input the employees last name");
+            eLastName = scan.nextLine();
+            System.out.println("Please input the employees Social Security Number");
+            eSSNumber = scan.nextLine();
+            System.out.println("Please input the employees earnings");
+            eEarnings = scan.nextLine();
+
+        }
+        while(command != 'q');
+        
 
     }
 
     public static void printMenu()
     {
-        System.out.print("\nPlease select the type of employee.\n"
+        System.out.print("\nType of employees.\n"
                    + "-----------------------------------\n"
                    + "a: Salaried Employee\n"
                    + "b: Hourly Employee\n"
