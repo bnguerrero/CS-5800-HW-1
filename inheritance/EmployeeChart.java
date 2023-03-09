@@ -27,8 +27,16 @@ public class EmployeeChart
             System.out.println("Please input the employees earnings");
             eEarnings = scan.nextLine();
 
-        }
-        while(command != 'q');
+            switch(command)
+            {
+                case 'a': 
+                    SalariedEmployee employee = new SalariedEmployee(eFirstName, eLastName, eSSNumber, eEarnings);
+                    break;
+                case 'b':
+                    HourlyEmployee employee2 = new HourlyEmployee(eFirstName, eLastName, eSSNumber, eSSNumber);
+                case 'c':
+                    CommisionEmployee employee3 = new CommisionEmployee(eFirstName, eLastName, eSSNumber, eEarnings);
+            }
         
 
     }

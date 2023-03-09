@@ -17,4 +17,8 @@ public class CommisionEmployee extends Employee
     {
         return gSales;
     }
+    public void display()
+    {
+        System.out.println(String.format("%-12s: %-10s: %-10s: %-10s", getFirstName(), getLastName(),  ));
+    }
 }
