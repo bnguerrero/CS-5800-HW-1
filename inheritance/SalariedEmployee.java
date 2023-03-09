@@ -1,4 +1,4 @@
-package CS5800HW1;
+package CS5800HW1.inheritance;
 
 public class SalariedEmployee extends Employee
 {
