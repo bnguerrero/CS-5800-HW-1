@@ -2,23 +2,27 @@ package CS5800HW1.inheritance;
 
 public class CommisionEmployee extends Employee
 {
-    private String cRate, gSales;
-    public CommisionEmployee(String firstName, String lastName, String sSNumber, String cRate, String gSales)
+    private double cRate, gSales;
+    public CommisionEmployee(String firstName, String lastName, String sSNumber, double cRate, double gSales)
     {
         super(firstName, lastName, sSNumber);
         this.cRate = cRate;
         this.gSales = gSales;
     }   
-    public String getCommisionRate()
+    public double getCommisionRate()
     {
         return cRate;
     }
-    public String getGrossSales()
+    public void setCommisionRate(double cRate)
+    {
+        this.cRate = cRate;
+    }
+    public double getGrossSales()
     {
         return gSales;
     }
-    public void display()
+    public void setGrossRate(double gSale)
     {
-        System.out.println(String.format("%-12s: %-10s: %-10s: %-10s", getFirstName(), getLastName(),  ));
+        this.gSales = gSale;
     }
 }
