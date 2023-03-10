@@ -23,5 +23,9 @@ public class HourlyEmployee extends Employee
     {
         return wage;
     }
+    public void setWage(String wage)
+    {
+        this.wage = wage;
+    }
     
 }
