@@ -5,50 +5,32 @@ public class EmployeeChart
 {
     public static void main(String[] args) 
     {
-        Scanner scan = new Scanner(System.in);
-        String eFirstName, eLastName, eSSNumber, eEarnings;
-        String choice;
-        char command;
+        SalariedEmployee employee = new SalariedEmployee("Joe", "Jones", "111-11-1111", "$2,500");
 
-        printMenu();
+        HourlyEmployee employee2 = new HourlyEmployee("Stephanie", "Smith", "222-22-2222", "$25", 32);
 
-        do
-        {
-            System.out.println("Please select the type of employee.");
-            choice = scan.next().toLowerCase();
-            command = choice.charAt(0);
-            // read employee input
-            System.out.println("Please input the employees first name");
-            eFirstName = scan.nextLine();
-            System.out.println("Please input the employees last name");
-            eLastName = scan.nextLine();
-            System.out.println("Please input the employees Social Security Number");
-            eSSNumber = scan.nextLine();
-            System.out.println("Please input the employees earnings");
-            eEarnings = scan.nextLine();
+        HourlyEmployee employee3 = new HourlyEmployee("Mary", "Quinn", "333-33-3333", "$19", 47);
 
-            switch(command)
-            {
-                case 'a': 
-                    SalariedEmployee employee = new SalariedEmployee(eFirstName, eLastName, eSSNumber, eEarnings);
-                    break;
-                case 'b':
-                    HourlyEmployee employee2 = new HourlyEmployee(eFirstName, eLastName, eSSNumber, eSSNumber);
-                case 'c':
-                    CommisionEmployee employee3 = new CommisionEmployee(eFirstName, eLastName, eSSNumber, eEarnings);
-            }
+        CommisionEmployee employee4 = new CommisionEmployee("Nicole", "Dior", "444-44-4444", "15%", "$50,000");
+
+        SalariedEmployee employee5 = new SalariedEmployee("Renwa", "Chanel", "555-55-555", "$1,700");
+
+        BaseEmployee employee6 = new BaseEmployee("Mike", "Davenport", "666-66-6666", "$95,000");
+
+        CommisionEmployee employee7 = new CommisionEmployee("Mahnaz", "Vaziri", "777-77-7777", "22%", "$40,000");
+
+        System.out.println(employee);
+        System.out.println(employee2);
+        System.out.println(employee3);
+        System.out.println(employee4);
+        System.out.println(employee5);
+        System.out.println(employee6);
+        System.out.println(employee7);
         
-
-    }
-
-    public static void printMenu()
-    {
-        System.out.print("\nType of employees.\n"
-                   + "-----------------------------------\n"
-                   + "a: Salaried Employee\n"
-                   + "b: Hourly Employee\n"
-                   + "c: Commision Employee\n"
-                   + "d: Base Employee\n"
-                   + "q: quit this program\n\n");
+        
+        
+        
+        
+        
     }
 }

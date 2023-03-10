@@ -2,18 +2,18 @@ package CS5800HW1.inheritance;
 
 public class BaseEmployee extends Employee
 {
-    private double baseSalary;
-    public BaseEmployee(String firstName, String lastName, String sSNumber, double baseSalary)
+    private String baseSalary;
+    public BaseEmployee(String firstName, String lastName, String sSNumber, String baseSalary)
     {
         super(firstName, lastName, sSNumber);
         this.baseSalary = baseSalary;
     }
     
-    public double getBaseSalary()
+    public String getBaseSalary()
     {
         return baseSalary;
     }
-    public void setBaseSalary(double baseSalary)
+    public void setBaseSalary(String baseSalary)
     {
         this.baseSalary = baseSalary;
     }
