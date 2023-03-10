@@ -19,18 +19,9 @@ public class EmployeeChart
 
         CommisionEmployee employee7 = new CommisionEmployee("Mahnaz", "Vaziri", "777-77-7777", "22%", "$40,000");
 
-        System.out.println(employee);
-        System.out.println(employee2);
-        System.out.println(employee3);
-        System.out.println(employee4);
-        System.out.println(employee5);
-        System.out.println(employee6);
-        System.out.println(employee7);
         
+        System.out.printf("%-14s %-14s %-14s %-14s %-14s %-14s %-14s %-14s %-14s" , "First name", "Last name", "Social Sec #", "Weekly Salary", "Wage", "Hours worked", "Com rate", "Gross salary", "Base salary\n") ;
         
-        
-        
-        
-        
+        System.out.printf("%-14s %-14s %-14s %-14s %-14s %-14s %-14s %-14s %-14s" ,employee.getFirstName(), employee.getLastName(), employee.getSSNumber(), employee.getWeeklySalary());
     }
 }
