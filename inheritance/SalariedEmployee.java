@@ -17,4 +17,9 @@ public class SalariedEmployee extends Employee
     {
         return weeklySalary;
     }
+
+    public void setWeeklySalary(String weeklySalary)
+    {
+        this.weeklySalary = weeklySalary;
+    }
 }
