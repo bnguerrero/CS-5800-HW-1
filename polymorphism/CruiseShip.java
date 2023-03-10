@@ -13,6 +13,11 @@ public class CruiseShip extends Ship
     {
         return maxPassengers;
     }
+
+    public void setMaxPassengers(int maxPassengers)
+    {
+        this.maxPassengers = maxPassengers;
+    }
     
     @Override
     public void display()

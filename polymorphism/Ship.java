@@ -13,10 +13,19 @@ public class Ship
     {
         return sName;
     }
+    public void setShipName(String sName)
+    {
+        this.sName = sName;
+    }
     public String getYearBuilt()
     {
         return sYearBuilt;
     }
+    public void setYearBuilt(String sYearBuilt)
+    {
+        this.sYearBuilt = sYearBuilt;
+    }
+    
     public void display()
     {
         System.out.println("Ship Name: "+ sName + "Year Built: "+ sYearBuilt);

@@ -12,6 +12,11 @@ public class CargoShip extends Ship
     {
         return cargoCapacity;
     }
+
+    public void setCargoCapacity(int cargoCapacity)
+    {
+        this.cargoCapacity = cargoCapacity;
+    }
     
     @Override
     public void display()
