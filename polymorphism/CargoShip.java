@@ -21,6 +21,6 @@ public class CargoShip extends Ship
     @Override
     public void display()
     {
-        System.out.println("Ship Name: "+ getShipName() + "Year Built: "+ getYearBuilt() + "Cargo Capacity: " + cargoCapacity);
+        System.out.println("Ship Name: "+ getShipName() + ", "+ "Year Built: "+ getYearBuilt()+ ", " + "Cargo Capacity: " + cargoCapacity);
     }
 }

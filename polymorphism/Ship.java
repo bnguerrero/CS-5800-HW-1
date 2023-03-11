@@ -28,6 +28,6 @@ public class Ship
     
     public void display()
     {
-        System.out.println("Ship Name: "+ sName + "Year Built: "+ sYearBuilt);
+        System.out.println("Ship Name: "+ sName + ", Year Built: "+ sYearBuilt);
     }
 }

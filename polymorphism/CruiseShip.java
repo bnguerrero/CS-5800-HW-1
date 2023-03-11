@@ -22,6 +22,6 @@ public class CruiseShip extends Ship
     @Override
     public void display()
     {
-        System.out.println("Ship Name: "+ getShipName() + "Year Built: "+ getYearBuilt() + "Max Passengers: " + maxPassengers);
+        System.out.println("Ship Name: "+ getShipName() + ", "+ "Year Built: "+ getYearBuilt() + ", " + "Max Passengers: " + maxPassengers);
     }
 }
