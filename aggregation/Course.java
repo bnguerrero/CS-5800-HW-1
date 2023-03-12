@@ -9,18 +9,13 @@ public class Course
     public Course(String courseName, Instructor instructor, Textbook textbook)
     {
         this.courseName = courseName;
-        this.instructor = new Instructor(instructor);
-        this.textbook = new Textbook(textbook);
+        this.instructor = instructor;
+        this.textbook = textbook;
     }
 
     public String getCourseName()
     {
         return courseName;
-    }
-
-    public void setCourseName(String courseName)
-    {
-        this.courseName = courseName;
     }
 
     public Instructor geInstructor()
@@ -33,9 +28,11 @@ public class Course
         return new Textbook(textbook);
     }
 
-    public void display()
+    public String display()
     {
-        System.out.println("Course name: " + courseName + "\nInstructor info: " + instructor + "\nTextbook info: " + textbook);
+        String statement = "Course name: " + courseName + "\nInstructor info: " + instructor.display() + "\nTextbook info: " + textbook.display();
+
+        return statement;
     }
 
 }

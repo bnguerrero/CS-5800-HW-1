@@ -28,19 +28,9 @@ public class Textbook
         this.publisher = textbook.publisher;
     }
 
-    public String getTitle()
-    {
-        return title;
-    }
-
     public void setTitle(String title)
     {
         this.title = title;
-    }
-
-    public String getAuthor()
-    {
-        return author;
     }
 
     public void setAuthor(String author)
@@ -48,18 +38,15 @@ public class Textbook
         this.author = author;
     }
 
-    public String getPublisher()
-    {
-        return publisher;
-    }
-
     public void setPublisher(String publisher)
     {
         this.publisher = publisher;
     }
 
-    public void display()
+    public String display()
     {
-        System.out.println("Title: " + title + "\nAuthor: " + author + "\nPublisher: " + publisher);
+        String statement = "Title: " + title + "\nAuthor: " + author + "\nPublisher: " + publisher;
+
+        return statement;
     }
 }
