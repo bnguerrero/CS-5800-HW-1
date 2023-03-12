@@ -44,9 +44,9 @@ public class Instructor
         this.officeNumber = officeNumber;
     }
 
-    public String display()
+    public String toString()
     {
-        String statement = "First name: " + firstName + "\nLast name: " + lastName + "\nOffice number: " + officeNumber;
+        String statement =  firstName + " " + lastName + "\nOffice number: " + officeNumber;
 
         return statement;
 

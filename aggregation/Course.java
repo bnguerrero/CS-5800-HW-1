@@ -20,17 +20,17 @@ public class Course
 
     public Instructor geInstructor()
     {
-        return new Instructor(instructor);
+        return instructor;
     }
 
     public Textbook getTextbook()
     {
-        return new Textbook(textbook);
+        return textbook;
     }
 
-    public String display()
+    public String toString()
     {
-        String statement = "Course name: " + courseName + "\nInstructor info: " + instructor.display() + "\nTextbook info: " + textbook.display();
+        String statement = "\nCourse name: " + courseName + "\nInstructor info: " + instructor.toString() + "\nTextbook info: " + textbook.toString();
 
         return statement;
     }

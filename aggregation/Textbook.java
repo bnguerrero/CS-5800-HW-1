@@ -43,9 +43,9 @@ public class Textbook
         this.publisher = publisher;
     }
 
-    public String display()
+    public String toString()
     {
-        String statement = "Title: " + title + "\nAuthor: " + author + "\nPublisher: " + publisher;
+        String statement = title + ", " + author + ", " + publisher;
 
         return statement;
     }
