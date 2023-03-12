@@ -3,10 +3,12 @@ package CS5800HW1.composition;
 public class File 
 {
     private String fileName;
+    private Folder folder;
 
-    public File(String fileName)
+    public File(String fileName, Folder folder)
     {
         this.fileName = fileName;
+        this.folder = folder;
     }
 
     public void setFileName(String fileName)
@@ -17,5 +19,15 @@ public class File
     public String getFileName()
     {
         return fileName;
+    }
+
+    public void delete()
+    {
+        folder.deleteFile();
+    }
+
+    public void display()
+    {
+        System.out.println(fileName);
     }
 }

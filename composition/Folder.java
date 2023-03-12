@@ -5,14 +5,14 @@ import java.util.ArrayList;
 
 public class Folder 
 {
-    private String name;
+    private String folderName;
     private ArrayList<File> files;
     private ArrayList<Folder> subFolders;
     
 
-    public Folder(String name)
+    public Folder(String folderName)
     {
-        this.name = name;
+        this.folderName = folderName;
     }
 
     public void addSubFolder(Folder subFolder)
@@ -39,4 +39,17 @@ public class Folder
         }
     }
 
+    public void display()
+    {
+        System.out.println(folderName);
+        for(int i = 0; i<subFolders.size(); i++)
+        {
+            subFolders.get(i).display();
+        }
+        for(int i = 0; i<subFolders.size(); i++)
+        {
+            files.get(i).display();
+        }
+
+    }
 }
