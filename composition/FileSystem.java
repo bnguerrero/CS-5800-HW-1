@@ -46,6 +46,15 @@ public class FileSystem
         php_demo1.addFile(indexhtml);
         php_demo1.addFile(remoteFiles);
 
+        // display all files and subfolders
         php_demo1.display();
+        System.out.println("\n");
+
+        // delete folder app
+        app.delete();
+        php_demo1.display();
+
+
+
     }
 }

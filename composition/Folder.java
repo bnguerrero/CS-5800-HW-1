@@ -26,15 +26,12 @@ public class Folder
     {
         this.files.add(file);
     }
-    public void deleteSubFolders()
+    public void delete()
     {
         for(int i = 0; i< subFolders.size(); i++)
         {
             subFolders.remove(i);
         }
-    }
-    public void deleteFile()
-    {
         for(int i = 0; i< subFolders.size(); i++)
         {
             files.remove(i);
