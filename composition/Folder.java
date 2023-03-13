@@ -2,9 +2,6 @@ package CS5800HW1.composition;
 
 import java.util.ArrayList;
 
-import java.util.Iterator;
-
-
 
 public class Folder 
 {
@@ -37,19 +34,7 @@ public class Folder
     {
         subFolders.remove(subFolder);
     }
-    /* *
-    public void delete()
-    {
-        for(Folder subFolder: subFolders)
-        {
-            subFolder.delete();
-        }
-        for(File file: files)
-        {
-            file.delete();
-        }
-    }
-    */
+   
     public void delete()
     {
         for (Folder subFolder : subFolders) 
