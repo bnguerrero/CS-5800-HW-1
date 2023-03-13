@@ -2,6 +2,9 @@ package CS5800HW1.composition;
 
 import java.util.ArrayList;
 
+import java.util.Iterator;
+
+
 
 public class Folder 
 {
@@ -9,12 +12,14 @@ public class Folder
     private ArrayList<File> files;
     private ArrayList<Folder> subFolders;
     
+    
 
     public Folder(String folderName)
     {
         this.folderName = folderName;
         this.subFolders = new ArrayList<>();
         this.files = new ArrayList<>();
+        
     }
 
     public void addSubFolder(Folder subFolder)
@@ -26,17 +31,39 @@ public class Folder
     {
         this.files.add(file);
     }
+
+
+    public void deleteSubFolder(Folder subFolder)
+    {
+        subFolders.remove(subFolder);
+    }
+    /* *
     public void delete()
     {
-        for(int i = 0; i< subFolders.size(); i++)
+        for(Folder subFolder: subFolders)
         {
-            subFolders.remove(i);
+            subFolder.delete();
         }
-        for(int i = 0; i< subFolders.size(); i++)
+        for(File file: files)
         {
-            files.remove(i);
+            file.delete();
         }
     }
+    */
+    public void delete()
+    {
+        for (Folder subFolder : subFolders) 
+        {
+            subFolder.delete();
+        }
+        subFolders.clear();
+        for (File file : files) 
+        {
+            file.delete();
+        }
+        files.clear();
+    }
+    
 
     public void display()
     {
