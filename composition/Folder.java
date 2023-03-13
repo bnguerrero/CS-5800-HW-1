@@ -1,5 +1,6 @@
 package CS5800HW1.composition;
 
+import java.nio.file.Files;
 import java.util.ArrayList;
 
 
@@ -13,6 +14,8 @@ public class Folder
     public Folder(String folderName)
     {
         this.folderName = folderName;
+        this.subFolders = new ArrayList<>();
+        this.files = new ArrayList<>();
     }
 
     public void addSubFolder(Folder subFolder)
@@ -42,13 +45,13 @@ public class Folder
     public void display()
     {
         System.out.println(folderName);
-        for(int i = 0; i<subFolders.size(); i++)
+        for(Folder subFolder: subFolders)
         {
-            subFolders.get(i).display();
+            subFolder.display();
         }
-        for(int i = 0; i<subFolders.size(); i++)
+        for(File file: files)
         {
-            files.get(i).display();
+            file.display();
         }
 
     }
